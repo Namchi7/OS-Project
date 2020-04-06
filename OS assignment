@@ -20,7 +20,7 @@ int main()
   printf("\n\nProcess\t|Turnaround Time|Waiting Time\n\n"); 
   for(time=0,count=0;remain!=0;) 
   { 
-    if(right_time[count]<=time_quantum && right_time[count]>0) 
+    if(right_time[count]<=time_quantum || right_time[count]>0) 
     { 
       time+=right_time[count]; 
       right_time[count]=0; 
